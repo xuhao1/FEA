@@ -4,5 +4,20 @@
 class site
 {
 public:
-	vector2f _loc;
+	vector2f loc;
+	site()
+	{
+		loc.x=0;
+		loc.y=0;
+	}
+	site(double x,double y)
+	{
+		loc.x=x;
+		loc.y=y;
+	}
+	site(vector2f a)
+	{
+		loc=a;
+	}
+	
 };
